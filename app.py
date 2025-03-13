@@ -34,7 +34,7 @@ if st.sidebar.button("Get Air Quality Data"):
      if not city:
         st.sidebar.error("⚠ Please enter a city or use 'Get My Location' button.")
      else:
-         api_url = f"http://127.0.0.1:5000/air_quality?city={city}"  # Update with your Flask API URL
+         api_url = f"http://127.0.0.1:5000/air_quality?city={city}"  # Update with your API URL
          response = requests.get(api_url)#to enter the url
 
          if response.status_code == 200:
